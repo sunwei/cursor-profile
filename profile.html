@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <header class="profile-header">
+                <h1>用户中心</h1>
+                <div class="user-info">
+                    <div class="avatar">
+                        <span class="avatar-text"></span>
+                    </div>
+                    <div class="user-details">
+                        <h2 class="user-email"></h2>
+                        <p class="membership-duration"></p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <div class="content-left">
+                    <section class="subscription-info">
+                        <h3>当前套餐</h3>
+                        <div class="current-plan">
+                            <div class="plan-header">
+                                <span class="plan-name"></span>
+                                <span class="plan-price"></span>
+                            </div>
+                            <div class="subscription-status">
+                                <div class="subscription-end-date"></div>
+                                <div class="subscription-alert"></div>
+                            </div>
+                            <div class="plan-features"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="content-right">
+                    <section class="usage-stats">
+                        <h3>使用情况</h3>
+                        <div class="usage-cards">
+                            <div class="usage-card">
+                                <div class="usage-title">API 调用次数</div>
+                                <div class="usage-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="usage-numbers">
+                                        <span class="current-usage"></span>
+                                        <span class="total-limit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="usage-card">
+                                <div class="usage-title">存储空间</div>
+                                <div class="usage-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill"></div>
+                                    </div>
+                                    <div class="usage-numbers">
+                                        <span class="current-usage"></span>
+                                        <span class="total-limit"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="actions">
+                <button class="action-btn upgrade-btn">升级套餐</button>
+                <button class="action-btn logout-btn">退出登录</button>
+            </section>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html> 

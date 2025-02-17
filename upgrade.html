@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升级套餐</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="upgrade.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upgrade-container">
+            <header class="upgrade-header">
+                <h1>选择套餐</h1>
+                <p class="current-plan">当前套餐：<span class="current-plan-name"></span></p>
+            </header>
+
+            <div class="plans-container">
+                <div class="plan-card professional" data-plan="professional">
+                    <div class="plan-header">
+                        <h2>Professional</h2>
+                        <div class="plan-price">
+                            <span class="price">¥99</span>
+                            <span class="period">/月</span>
+                        </div>
+                        <p class="plan-description">适合专业创作者和小型团队</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>高级AI模型访问</li>
+                        <li>优先技术支持</li>
+                        <li>高级分析功能</li>
+                        <li>24/7客服支持</li>
+                        <li>团队协作功能</li>
+                        <li>自定义域名支持</li>
+                    </ul>
+                    <button class="select-plan-btn">选择专业版</button>
+                </div>
+
+                <div class="plan-card business" data-plan="business">
+                    <div class="popular-tag">最受欢迎</div>
+                    <div class="plan-header">
+                        <h2>Business</h2>
+                        <div class="plan-price">
+                            <span class="price">¥299</span>
+                            <span class="period">/月</span>
+                        </div>
+                        <p class="plan-description">适合企业级用户和大型团队</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>GPT-4 无限制访问</li>
+                        <li>专属客户经理</li>
+                        <li>企业级API集成</li>
+                        <li>无限存储空间</li>
+                        <li>高级数据分析</li>
+                        <li>定制化解决方案</li>
+                        <li>7x24小时技术支持</li>
+                    </ul>
+                    <button class="select-plan-btn">选择企业版</button>
+                </div>
+            </div>
+
+            <div class="payment-section" style="display: none;">
+                <h2>选择支付方式</h2>
+                <p class="payment-summary">
+                    套餐：<span class="selected-plan"></span>
+                    <br>
+                    金额：<span class="selected-price"></span>
+                </p>
+
+                <div class="payment-methods">
+                    <div class="payment-method paypal">
+                        <h3>PayPal</h3>
+                        <p>点击下方链接跳转至 PayPal 支付页面</p>
+                        <a href="https://paypal.me/yourname" target="_blank" class="paypal-link">
+                            <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="PayPal">
+                            <span>使用 PayPal 支付</span>
+                        </a>
+                    </div>
+
+                    <div class="payment-method alipay">
+                        <h3>支付宝</h3>
+                        <p>扫描二维码完成支付</p>
+                        <div class="qr-code">
+                            <img src="alipay-qr.png" alt="支付宝二维码">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-notice">
+                    <p>完成支付后，请点击下方按钮：</p>
+                    <button class="confirm-payment-btn">我已完成支付</button>
+                    <p class="notice-text">
+                        * 点击确认后，系统会先为您开通服务。我们的客服会在24小时内核实您的支付情况，并通过邮件通知您。
+                        <br>
+                        * 如有问题，请保留支付凭证，联系客服：support@example.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="success-message" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h2>支付确认已提交</h2>
+                <p>感谢您的支付！</p>
+                <ul class="next-steps">
+                    <li>您的套餐已更新为 <span class="final-plan"></span></li>
+                    <li>我们的客服会在24小时内核实您的支付情况</li>
+                    <li>确认后，我们会通过邮件通知您</li>
+                    <li>如有问题，请联系：support@example.com</li>
+                </ul>
+                <button class="back-to-profile-btn">返回个人中心</button>
+            </div>
+        </div>
+    </div>
+    <script src="upgrade.js"></script>
+</body>
+</html> 
